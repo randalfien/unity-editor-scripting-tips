@@ -1,6 +1,5 @@
 //Automatically Generated
 public enum MyEnum{
-	pes = 0,
-	kocka = 1,
-	zirafa = 2
+	test = 0,
+	second = 1
 }

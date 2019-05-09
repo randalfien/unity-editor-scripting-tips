@@ -15,6 +15,11 @@ public class EnumDefinitionInspector : Editor
     public override void OnInspectorGUI()
     {
         EnumDefinition enumDef = (EnumDefinition) target;
+        if (enumDef.Values.Length == 0)
+        {
+            enumDef.Values = new[] {"test"};
+        }
+        
         EditorGUI.BeginChangeCheck();
         
         SerializedProperty property = serializedObject.FindProperty("Values");

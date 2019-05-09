@@ -28,3 +28,6 @@ https://assetstore.unity.com/packages/tools/localization/i2-localization-14884
 
 * Compile time tracking  
 https://github.com/DarrenTsung/DTCompileTimeTracker
+
+* XKCD  
+https://xkcd.com/1205/
