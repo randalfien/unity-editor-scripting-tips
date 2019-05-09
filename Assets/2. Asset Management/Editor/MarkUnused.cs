@@ -4,7 +4,10 @@ using System.Linq;
 using System.Reflection;
 using UnityEditor;
 using UnityEngine;
-
+/*
+ * This script will tag all unused assets in your project.
+ * It can run a long time if you have a lot of unused assets.
+ */
 public class MarkUnused
 {
   private const string UnusedLabel = "Unused"; // All unused assets will be tagged with this label

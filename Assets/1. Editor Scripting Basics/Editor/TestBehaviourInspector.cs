@@ -1,8 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEditor;
+﻿using UnityEditor;
 using UnityEngine;
-/*[CustomEditor(typeof(TestBehaviour))]
+
+[CustomEditor(typeof(TestBehaviour))]
 public class TestBehaviourInspector : Editor
 {
     public override void OnInspectorGUI()
@@ -13,4 +12,4 @@ public class TestBehaviourInspector : Editor
         
         EditorGUILayout.LabelField("Level", myTarget.Variable1.ToString());
     }
-}*/
+}

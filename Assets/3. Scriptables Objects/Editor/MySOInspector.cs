@@ -4,6 +4,9 @@ using UnityEngine.Networking;
 #pragma warning disable 649
 
 /*
+ 
+ This script shows how to get values from a google sheets script.
+ 
  Google Sheets javascript:
  
 function doGet(e)
@@ -40,11 +43,11 @@ public class MySOInspector : Editor
             _webRequest = UnityWebRequest.Get("https://script.google.com/macros/s/AKfycbwDNbVdFmkHwuRNQ9W9KEibmuNFgB0eW3gQV1rnScL2S7hXD8yW/exec");
             _webRequest.SendWebRequest();
 
-            EditorApplication.update += CheckForImportRequestEnd;
+            EditorApplication.update += CheckForImportRequestEnd; // the only way to wait for a process to finish is with this
         }
     }
 
-    private class GDocResponse
+    private class GDocResponse // this class is used to parse the JSON
     {
         public int[] result;
     }

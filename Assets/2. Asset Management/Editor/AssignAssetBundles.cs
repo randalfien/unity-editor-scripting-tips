@@ -1,10 +1,11 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using System.IO;
+﻿using System.IO;
 using System.Text.RegularExpressions;
 using UnityEditor;
-using UnityEngine;
 
+/*
+This script gives you the option to assign assets to asset bundles based on the file names.
+Change the string constants below to fit your needs
+*/
 public class AssignAssetBundles
 {
    // [MenuItem("Assets/Assign AssetBundle Names")]

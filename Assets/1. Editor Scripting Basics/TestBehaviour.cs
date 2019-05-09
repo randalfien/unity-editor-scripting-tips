@@ -7,7 +7,7 @@ public class TestBehaviour : MonoBehaviour
 {
     public int Variable1;
     
-    [EditorButton]
+ //   [EditorButton]
     public void SayHello()
     {
         print("Hello");

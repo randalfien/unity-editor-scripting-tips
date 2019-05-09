@@ -1,8 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using UnityEditor;
-using UnityEngine;
 
 public static class TestMenuItem
 {
@@ -22,6 +20,9 @@ public static class TestMenuItem
     }
 #endif
     
+    /**
+     * Edits the custom symbols defined in Project settings. Triggers a recompile.
+     */
     private static void RefreshCompilationFlag(bool value)
     {
         string definesString = PlayerSettings.GetScriptingDefineSymbolsForGroup(EditorUserBuildSettings.selectedBuildTargetGroup);
